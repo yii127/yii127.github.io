@@ -1,0 +1,41 @@
+body {
+    background-color: #fff0f5;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    text-align: center;
+    padding: 100px 20px;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #b50030;
+    margin-bottom: 40px;
+    text-shadow:
+      2px 2px 0 rgb(255, 155, 180),
+      4px 4px 0 rgb(105, 94, 94),
+      6px 6px 0 silver;
+  }
+  
+  .star-list {
+    list-style: none;
+    padding-left: 0;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .star-list li::before {
+    content: '☆ ';
+    color: #ffdaf1;
+    font-size: 20px;
+    margin-right: 6px;
+  }
+  
+  .star-list li {
+    font-size: 24px;
+    margin: 10px 0;
+    text-shadow:
+      1px 1px 0 rgb(255, 195, 201),
+      2px 2px 0 gray,
+      3px 3px 0 silver;
+  }
+  
