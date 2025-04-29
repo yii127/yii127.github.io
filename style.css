@@ -1,13 +1,12 @@
-/* 全站基本設定 */
 body {
   font-family: 'Zen Maru Gothic', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(#fceaff, #e0f7fa);
   color: #5c5c5c;
+  scroll-behavior: smooth;
 }
 
-/* 導覽列 */
 .navbar {
   position: fixed;
   top: 0;
@@ -22,46 +21,49 @@ body {
 .navbar a {
   margin: 0 20px;
   text-decoration: none;
-  color: #715d7d;
+  color: #6a1b9a;
   font-size: 20px;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
 .navbar a:hover {
   color: #d81b60;
 }
 
-/* 各區域內容 */
 .section {
-  height: 100vh; /* 占滿一整個螢幕高度 */
-  padding-top: 100px; /* 空間留給導覽列 */
+  padding-top: 100px;
   text-align: center;
-  font-size: 36px;
-  background-color: #ffffffc7;
+  font-size: 28px;
+  background-color: #ffffffcc;
   margin: 20px auto;
   border-radius: 20px;
   width: 80%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 60px;
 }
 
-/* 回到最上方按鈕 */
+/* 清單樣式 */
+.item-list {
+  list-style-type: "☆ ";
+  text-align: left;
+  max-width: 400px;
+  margin: 20px auto;
+  font-size: 20px;
+  line-height: 2;
+  color: #444;
+  text-shadow: 1px 1px orange, 2px 2px gray, 3px 3px silver;
+}
+
 .back-to-top {
   position: fixed;
   right: 20px;
   bottom: 20px;
   background: linear-gradient(#ffb6b9, #fae3d9);
-  color: #5a4c63;
+  color: #6a1b9a;
   padding: 12px 18px;
   border-radius: 50px;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background 0.3s, transform 0.3s;
-}
-
-.back-to-top:hover {
-  background: linear-gradient(#ff91a4, #fddde6);
-  transform: translateY(-5px);
 }
