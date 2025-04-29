@@ -1,41 +1,67 @@
+/* 全站基本設定 */
 body {
-    background-color: #fff0f5;
-    font-family: 'Zen Maru Gothic', sans-serif;
-    text-align: center;
-    padding: 100px 20px;
-    color: #333;
-  }
-  
-  h1 {
-    font-size: 32px;
-    color: #b50030;
-    margin-bottom: 40px;
-    text-shadow:
-      2px 2px 0 rgb(255, 155, 180),
-      4px 4px 0 rgb(105, 94, 94),
-      6px 6px 0 silver;
-  }
-  
-  .star-list {
-    list-style: none;
-    padding-left: 0;
-    display: inline-block;
-    text-align: left;
-  }
-  
-  .star-list li::before {
-    content: '☆ ';
-    color: #ffdaf1;
-    font-size: 20px;
-    margin-right: 6px;
-  }
-  
-  .star-list li {
-    font-size: 24px;
-    margin: 10px 0;
-    text-shadow:
-      1px 1px 0 rgb(255, 195, 201),
-      2px 2px 0 gray,
-      3px 3px 0 silver;
-  }
-  
+  font-family: 'Zen Maru Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#fceaff, #e0f7fa);
+  color: #5c5c5c;
+}
+
+/* 導覽列 */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #ffc1e3, #c1dfff);
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #715d7d;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #d81b60;
+}
+
+/* 各區域內容 */
+.section {
+  height: 100vh; /* 占滿一整個螢幕高度 */
+  padding-top: 100px; /* 空間留給導覽列 */
+  text-align: center;
+  font-size: 36px;
+  background-color: #ffffffc7;
+  margin: 20px auto;
+  border-radius: 20px;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 回到最上方按鈕 */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: linear-gradient(#ffb6b9, #fae3d9);
+  color: #5a4c63;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+  background: linear-gradient(#ff91a4, #fddde6);
+  transform: translateY(-5px);
+}
